@@ -6,4 +6,6 @@ Console.WriteLine($"Hello {user}");
 
 // Prompt user favorite color. Print "{color} is a nice color!".
 
-// TODO: Code here.
+Console.WriteLine($"What's your favorite color?");
+var color = Console.ReadLine();
+Console.WriteLine($"{color} is a nice color!".);

@@ -2,7 +2,10 @@
 
 void Count(int value)
 {
-    //TODO: Fill out code here.
+    for (int = 1; int <= value; i++)
+    {
+        Console.WriteLine(i);
+    }
 }
 
 // Will print numbers up to 10.

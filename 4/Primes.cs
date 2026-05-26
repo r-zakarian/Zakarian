@@ -3,6 +3,15 @@
 bool IsPrime(int value)
 {
     // TODO: Code here. (hint: modulo % operator)
+    if (value < 2) return false;
+    for (int i = 2; i * i <= value; i++)
+    {
+        if (value % i == 0)
+        {
+            return false;
+        }
+    }
+        
 }
 
 Console.WriteLine($"Is 4 prime? {IsPrime(4)}"); // false

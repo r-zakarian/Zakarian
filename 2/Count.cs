@@ -1,3 +1,6 @@
 // Count to 100.
 
-// TODO: Code here. (hint: loops)
+for (int i = 1; i <= 100; i++)
+{
+  Console.WriteLine(i)
+}

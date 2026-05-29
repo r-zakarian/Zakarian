@@ -12,11 +12,11 @@ class Account
 
     public void Deposit(int value)
     {
-        //TODO: Fill out
+        Balance = Balance + value;
     }
 
     public void Withdraw(int value)
     {
-        //TODO: Fill out
+        Balance = Balance - value;
     }
 }

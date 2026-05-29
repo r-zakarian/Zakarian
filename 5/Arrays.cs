@@ -3,7 +3,10 @@
 //Print each value of the array in a new line.
 void PrintArray(int[] values)
 {
-    //TODO: Code here.
+    foreach (int val in values)
+    {
+        Console.WriteLine(val);
+    }
 }
 
 //Sample: return numbers greater than 0
@@ -23,13 +26,23 @@ int[] GreaterThanZero(int[] values)
 //Return even numbers in array.
 int[] EvenNumbersOnly(int[] values)
 {
-    return []; //placeholer
+    for (int i >= 0; i< values.Length; i++)
+        {
+        if (values[i] % 2 == 0)
+        }
+        
+    return [i];
 }
 
 //Return array in reverse.
 int[] ArrayInReverse(int[] values)
 {
-    return []; //placeholer
+    for (int i >= 0; i< values.Length; i++)
+        {
+        if (values[i] % 2 != 0)
+        }
+        
+    return [i];
 }
 
 Console.WriteLine("PrintArray");

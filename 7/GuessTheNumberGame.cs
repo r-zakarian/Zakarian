@@ -2,7 +2,7 @@
 // Assignment: change the tries to 2 and tell the user if the number is higher or lower.
 
 int randomNumber = Random.Shared.Next(10);
-int numberOfTries = 3;
+int numberOfTries = 2;
 
 
 Console.WriteLine($"Guess the number! You have {numberOfTries} tries.");
@@ -16,9 +16,15 @@ for(int i = 0; i < numberOfTries; i++)
         Console.WriteLine("You win!");
         break;
     }
-    else
+    if(guessNumber > randomNumber)
     {
-        Console.WriteLine("Try again.");
+        Console.WriteLine("Try again, your number was too high!");
+        break;
+    }
+     if(guessNumber < randomNumber)
+    {
+        Console.WriteLine("Try again, your number was too low!");
+        break;
     }
 }
 

@@ -10,3 +10,4 @@ Console.WriteLine($"What's your favorite color?");
 var color = Console.ReadLine();
 Console.WriteLine($"{color} is a nice color!");
 // comment number 1
+Console.WriteLine($"Nice to meet you {user}");

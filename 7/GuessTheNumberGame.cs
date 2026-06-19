@@ -5,7 +5,7 @@ int randomNumber = Random.Shared.Next(10);
 int numberOfTries = 3;
 
 
-Console.WriteLine($"Guess the number! You have {numberOfTries} tries.");
+Console.WriteLine($"Guess the number between 0-9! You have {numberOfTries} tries.");
 
 for(int i = 0; i < numberOfTries; i++)
 {

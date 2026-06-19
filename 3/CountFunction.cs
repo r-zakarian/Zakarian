@@ -2,11 +2,14 @@
 
 void Count(int value)
 {
-    //TODO: Fill out code here.
+    for (int i = 1; i <= value; i++)
+    Console.WriteLine(i);
 }
 
-// Will print numbers up to 10.
-Count(10);
+void Tens(int start, int end)
+{
+    for (int i = start; i <= end; i++)
+    Console.WriteLine(i);
+}
 
-// Will print numebrs up to 25.
-Count(25);
+Tens(end: 40, start: 20);

@@ -3,9 +3,11 @@
 //Print each value of the array in a new line.
 void PrintArray(int[] values)
 {
-    //TODO: Code here.
+    foreach (int value in values)
+    {
+        Console.WriteLine(value);
+    }
 }
-
 //Sample: return numbers greater than 0
 int[] GreaterThanZero(int[] values)
 {
@@ -19,19 +21,29 @@ int[] GreaterThanZero(int[] values)
     }
     return results.ToArray();
 }
-
 //Return even numbers in array.
 int[] EvenNumbersOnly(int[] values)
 {
-    return []; //placeholer
+    List<int> results = [];
+    for (int i = 0; i < values.Length; i++)
+    {
+        if (values[i] % 2 == 0)
+        {
+            results.Add(values[i]);
+        }
+    }
+    return results.ToArray(); //placeholer
 }
-
 //Return array in reverse.
 int[] ArrayInReverse(int[] values)
 {
-    return []; //placeholer
+    List<int> results = [];
+    for (int i = values.Length - 1; i >= 0; i--)
+    {
+        results.Add(values[i]);
+    }
+    return results.ToArray(); //placeholer
 }
-
 Console.WriteLine("PrintArray");
 PrintArray([1, 2, 3, 4, 5]);
 Console.WriteLine("PrintArray - GreaterThanZero");

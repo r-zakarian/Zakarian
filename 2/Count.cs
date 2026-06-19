@@ -1,7 +1,7 @@
 // Count to 100.
 
-int i = 1;
-for (int i = 1; i <= 100; i++)
+
+for (int i = 10; i <= 20; i++)
 {
   Console.WriteLine(i);
 }

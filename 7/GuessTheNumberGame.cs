@@ -11,14 +11,18 @@ for(int i = 0; i < numberOfTries; i++)
 {
     string guessText = Console.ReadLine();
     int guessNumber = int.Parse(guessText);
-    if(guessNumber == randomNumber)
+    if(guessNumber > randomNumber)
     {
-        Console.WriteLine("You win!");
-        break;
+        Console.WriteLine("Your guess is too high, try again!");
     }
-    else
+    else if(guessNumber < randomNumber)
     {
-        Console.WriteLine("Try again.");
+        Console.WriteLine("Your guess is too low, try again!");
+    }
+    else if(guessNumber == randomNumber)
+    {
+        Console.WriteLine("You guessed correct! You Win!");
+        break;
     }
 }
 
